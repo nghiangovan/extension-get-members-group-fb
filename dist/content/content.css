@@ -1,0 +1,90 @@
+/* css loading */
+.load-wrapp p {
+  padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+  margin-right: 0;
+}
+
+.l-9 {
+  animation-delay: 1.44s;
+}
+
+.load-9 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  background: white;
+  opacity: 0.5;
+}
+.load-9 .spinner {
+  animation: loadingI 2s linear infinite;
+}
+.load-9 .bubble-1,
+.load-9 .bubble-2 {
+  animation: bounce 2s ease-in-out infinite;
+}
+.load-9 .bubble-2 {
+  animation-delay: -1s;
+}
+
+.spinner {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+}
+
+.bubble-1,
+.bubble-2 {
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #4b9cdb;
+}
+
+.bubble-2 {
+  top: auto;
+  bottom: 0;
+}
+
+.load-9 .spinner {
+  animation: loadingI 2s linear infinite;
+}
+.load-9 .bubble-1,
+.load-9 .bubble-2 {
+  animation: bounce 2s ease-in-out infinite;
+}
+.load-9 .bubble-2 {
+  animation-delay: -1s;
+}
+
+.load-9 p {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #4b9cdb;
+}
+
+@keyframes loadingI {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+

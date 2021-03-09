@@ -1,0 +1,46 @@
+{
+  "name": "extension-get-members-group-fb",
+  "version": "1.0.0",
+  "description": "A Vue.js web extension",
+  "author": "nghianv-0795 <ngo.van.nghia@sun-asterisk.com>",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "prettier": "prettier \"src/**/*.{js,vue}\"",
+    "prettier:write": "npm run prettier -- --write",
+    "build": "cross-env NODE_ENV=production webpack --hide-modules",
+    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules",
+    "build-zip": "node scripts/build-zip.js",
+    "watch": "npm run build -- --watch",
+    "watch:dev": "cross-env HMR=true npm run build:dev -- --watch"
+  },
+  "dependencies": {
+    "vue": "^2.6.12",
+    "webextension-polyfill": "^0.3.1",
+    "xlsx": "^0.15.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/runtime-corejs3": "^7.11.2",
+    "archiver": "^3.0.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.2",
+    "core-js": "^3.6.5",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.6.0",
+    "ejs": "^2.6.1",
+    "file-loader": "^5.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "web-ext-types": "^2.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-extension-reloader": "^1.1.0"
+  }
+}
